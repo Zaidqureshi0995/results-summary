@@ -26,11 +26,13 @@ Users should be able to:
 ### Screenshot
 
 ![Results Summary Component preview](/design/desktop-preview.jpg)
+![Results Summary Component preview desktop](desktop-preview.jpeg)
+![Results Summary Component preview mobile](mobile-preview.jpeg)
 
 ### Links
 
 - Solution URL: [Github](https://github.com/Zaidqureshi0995/Results-Summary-Challenge)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Live Site URL: [Github Pages]([https://your-live-site-url.com](https://zaidqureshi0995.github.io/results-summary/)
 
 ## My process
 
@@ -86,4 +88,4 @@ learned to use different tags and css properties to achieve the desired result.
 ## Author
 
 - Frontend Mentor - [@Zaidqureshi0995](https://www.frontendmentor.io/profile/Zaidqureshi0995)
-- Twitter - [@Zaidqureshi0995](https://github.com/Zaidqureshi0995/)
+- Github - [@Zaidqureshi0995](https://github.com/Zaidqureshi0995/)
