@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+body,
+html {
+    /* height: 100%; */
+    width: 100%;
+}
+
+.result {
+    background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 24px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result h1 {
+    padding: 2.5vh 0 0;
+    color: var(--Light-lavender);
+    font-weight: 500;
+    font-size: 2.1vh;
+}
+
+.score {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(var(--Violet-blue), var(--Persian-blue));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2.5vh 0;
+}
+
+.score .score_number {
+    color: var(--White);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.result h2 {
+    color: var(--White);
+    font-weight: 700;
+    margin-bottom: 1vh;
+}
+
+.result p {
+    color: var(--Light-lavender);
+    font-weight: 500;
+}
+
+.result .result_text {
+    color: var(--Light-lavender);
+    font-weight: 500;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.summary {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.summary h3 {
+    color: var(--Dark-gray-blue);
+    font-weight: 800;
+}
+
+.summary .summary_score {
+    margin: 2vh 1vh 1.5vh;
+    list-style: none;
+}
+
+.summary .summary_score .summary_score_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5vh;
+    padding: 1.7vh;
+    font-weight: 700;
+    border-radius: 0.3rem;
+}
+
+.summary .summary_score .summary_score_info .icon_container {
+    display: flex;
+}
+
+.icon_container .icon {
+    margin: 0 1.5vh 0 0;
+}
+
+.stat_score {
+    color: var(--Light-lavender);
+}
+
+.stat_score_point {
+    color: var(--Dark-gray-blue);
+}
+
+.summary .summary_score .summary_score_info p {
+    font-size: 18px;
+}
+
+.summary .summary_score .summary_score_info:nth-child(1) {
+    color: var(--Light-red);
+    background-color: hsla(0, 100%, 67%, .05);
+}
+
+.summary .summary_score .summary_score_info:nth-child(2) {
+    color: var(--Orangey-yellow);
+    background-color: hsla(39, 100%, 56%, .05);
+}
+
+.summary .summary_score .summary_score_info:nth-child(3) {
+    color: var(--Green-teal);
+    background-color: hsla(166, 100%, 37%, .05);
+}
+
+.summary .summary_score .summary_score_info:nth-child(4) {
+    color: var(--Cobalt-blue);
+    background-color: hsla(234, 85%, 45%, .05);
+}
+
+.button {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4rem;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    font-weight: 700;
+    margin: auto;
+    padding: 2vh;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.button:hover,
+.button:active {
+    background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    cursor: pointer;
+}
+
+.attribution {
+    color: var(--Dark-gray-blue);
+    text-align: center;
+    font-size: 15px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--Light-red);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+@media (min-width:767px) {
+    .container {
+        display: flex;
+        padding: 10% 22% 0;
+        margin: 35px;
+    }
+
+    .result {
+        width: 50%;
+
+    }
+
+    .result h2{
+        margin-bottom: 1.5vh;
+        font-size: 30px;
+    }
+
+    .result p{
+        font-size: 16px;
+    }
+
+    .summary {
+        width: 50%;
+    }
+
+    .result {
+        border-radius: 24px;
+    }
+
+}
